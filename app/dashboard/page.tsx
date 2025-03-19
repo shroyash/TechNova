@@ -1,9 +1,13 @@
 
+import ShowStatistics from "./_ComponentDash/ShowStatistics"
+import { DashboardLayout } from "./_ComponentDash/DashLayout"
 
-const page = () => {
+export default function DashboardPage() {
   return (
-    <div className="mt-56">page</div>
+       <DashboardLayout>
+      <ShowStatistics />
+    </DashboardLayout>
+   
   )
 }
 
-export default page

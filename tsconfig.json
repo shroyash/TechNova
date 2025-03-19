@@ -18,8 +18,9 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".", // This specifies that the root directory is the base
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

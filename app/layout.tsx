@@ -3,6 +3,7 @@ import { Outfit } from "next/font/google";
 import "./globals.css";
 import Headers from "./_Component/Headers";
 import { Footer } from "./_Component/Footer";
+import { CourseProvider } from "@/Context/CoursesContext";
 
 
 const outfit = Outfit({
@@ -24,7 +25,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${outfit.variable} antialiased`}>
         <Headers/>
-        {children}
+        <CourseProvider>
+           {children}
+        </CourseProvider>
         <Footer/>
       </body>
     </html>

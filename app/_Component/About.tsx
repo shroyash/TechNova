@@ -29,7 +29,7 @@ const About = () => {
             With every challenge they face, they emerge stronger, more skilled, and more innovative
           </p>
   
-        
+          <Button className="mt-6 w-fit bg-blue-700">Learn More</Button>
         </div>
       </div>
     </div>

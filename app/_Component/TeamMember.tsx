@@ -43,11 +43,11 @@ const teamMembers: TeamMember[] = [
 
 const TeamMemberComponent = () => {
   return (
-    <div className="container mx-auto py-12 px-4">
-      <h2 className="text-3xl font-bold text-center mb-12">Meet Our Team</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="container container-bg mx-auto py-12 px-18">
+      <h2 className="text-3xl text-white font-bold text-center mb-12">Meet Our Team</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {teamMembers.map((member, index) => (
-          <Card key={index} className="overflow-hidden transition-all hover:shadow-lg">
+          <Card key={index} className="overflow-hidden  bg-black/50 backdrop-blur-sm border-blue-500/20 shadow-lg rounded-xl transition-all hover:shadow-lg">
             <div className="aspect-square relative overflow-hidden">
               <img
                 src={member.image}
